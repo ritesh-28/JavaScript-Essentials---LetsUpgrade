@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsUpgrade JavaScript Essential - Assignmet 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>LetsUpgrade JavaScript Essential - Assignmet 4</h1>
+        <h4>Pandey Ritesh Kumar (riteshkumar.dp@somaiya.edu)</h4>
+    </header>
+
+    <!-- QUESTION 1 -->
+    <h3>QUESTION 1</h3>
+    <p>By how many ways we can access elements in the DOM and write about them in brief?</p>
+    <h4>ANSWER :</h4>
+    <p>There are 5 ways to access elements in the DOM. <br>
+        They are : <br>
+    <ol>
+        <li>getElementByID()</li>
+        <li>getElementsByClassName()</li>
+        <li>getElementsByTagName</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+    </ol>
+    </p>
+
+    <!-- QUESTION 2 -->
+    <h3>QUESTION 2</h3>
+    <form action="" onclick="additionFunction()">
+        <label for="num1">Enter First Number : </label>
+        <input type="number" id="num1"> <br><br>
+        <label for="num2">Enter Second Number : </label>
+        <input type="number" id="num2"> <br><br>
+        <input type="button" value="Add">
+        <input type="number" name="" id="answer">
+    </form>
+    <script>
+        function additionFunction() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("answer").value = sum;
+            console.log(sum);
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
